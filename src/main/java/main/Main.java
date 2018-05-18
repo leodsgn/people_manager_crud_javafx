@@ -14,8 +14,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Hello world");
-        primaryStage.setWidth(600);
-        primaryStage.setWidth(300);
         Group root = new Group();
 
         Label label = new Label("Hello world");
@@ -25,8 +23,9 @@ public class Main extends Application {
         Scene scene = new Scene(root);
 
         primaryStage.setScene(scene);
+        primaryStage.setWidth(600);
+        primaryStage.setHeight(400);
 
         primaryStage.show();
-
     }
 }
