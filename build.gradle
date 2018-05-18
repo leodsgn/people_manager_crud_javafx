@@ -31,4 +31,4 @@ repositories {
 
 apply plugin: 'application'
 apply plugin: 'idea'
-mainClassName = 'com.jfxbe.helloworld.Helloworld'
+mainClassName = 'main.Main'
