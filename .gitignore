@@ -1,3 +1,10 @@
 /.idea/
 /build/
 build.gradle
+people_manager_crud_javafx.iml
+people_manager_crud_javafx.ipr
+people_manager_crud_javafx.iws
+src/main/main.iml
+src/test/test.iml
+.gitignore
+/.gradle/
