@@ -7,16 +7,25 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Pessoa {
+    private int id;
     private SimpleStringProperty nome;
-    private SimpleDateFormat dataNascimento;
+    private Date dataNascimento;
     private SimpleDoubleProperty altura;
     private SimpleDoubleProperty peso;
 
-    public Pessoa(String pNome, SimpleDateFormat pDataNacimento, Double pAltura, Double pPeso) {
+    public Pessoa(String pNome, Date pDataNacimento, Double pAltura, Double pPeso) {
         this.nome = new SimpleStringProperty(pNome);
         this.dataNascimento = pDataNacimento;
         this.altura = new SimpleDoubleProperty(pAltura);
         this.peso = new SimpleDoubleProperty(pPeso);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -27,7 +36,7 @@ public class Pessoa {
         return nome;
     }
 
-    public SimpleDateFormat getDataNascimento() {
+    public Date getDataNascimento() {
         return dataNascimento;
     }
 
@@ -51,7 +60,7 @@ public class Pessoa {
         this.nome.set(pNome);
     }
 
-    public void setDataNascimento(SimpleDateFormat pDataNascimento) {
+    public void setDataNascimento(Date pDataNascimento) {
         this.dataNascimento = pDataNascimento;
     }
 
